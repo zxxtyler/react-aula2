@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./componenets/NavBar";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "./pages/Home";
+import BanhoTosa from "./pages/BanhoTosa";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+    <BrowserRouter>
+      <header>
+        <div className="container">
+          <NavBar />
+        </div>
       </header>
-    </div>
-  );
+
+      <main>
+        <Routes>
+          <Route path="/" element={ <Home />} />
+          <Route path="banho-e-tosa" element={ <BanhoTosa />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
+    </>
+  )
 }
 
 export default App;
