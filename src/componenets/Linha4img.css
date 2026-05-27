@@ -1,0 +1,12 @@
+.card img {
+    height: 200px;
+}
+
+.card p{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 4px;
+    font-size: 14px;
+    margin: 0;
+}

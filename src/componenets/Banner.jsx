@@ -1,3 +1,5 @@
+import './Banner.css'
+
 export default function Banner(props) {
     return (
         <>
@@ -9,13 +11,13 @@ export default function Banner(props) {
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src={props.foto1} class="d-block w-100" alt={props.descricao1}/>
+                        <img src={props.foto1} class="d-block w-100" alt={props.descricao1} />
                     </div>
                     <div class="carousel-item">
-                        <img src={props.foto2} class="d-block w-100" alt={props.foto2}/>
+                        <img src={props.foto2} class="d-block w-100" alt={props.foto2} />
                     </div>
                     <div class="carousel-item">
-                        <img src={props.foto3} class="d-block w-100" alt={props.foto3}/>
+                        <img src={props.foto3} class="d-block w-100" alt={props.foto3} />
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
